@@ -3,33 +3,42 @@
 const inputDay = document.querySelector('input[type="text"]');
 let day = "";
 let days ="";
-let content;
+let contentDay;
 inputDay.addEventListener("input", (e)=>{
     day = e.target.value;
     console.log(day);
     days = (jour - day);
     console.log(days);
-   content = document.querySelector(".content3");
-   content.innerHTML = content.innerHTML.replace(/--/g, `${days}`);
+   contentDay = document.querySelector(".content3");
+   contentDay.innerHTML = contentDay.innerHTML.replace(/--/g, `${days}`);
 })
 
 const inputMonth = document.getElementById("month");
 let month = "";
 let months ="";
+let contentMonth;
 inputMonth.addEventListener("input", (e) =>{
    month = e.target.value;
    months = mois - month;
+   console.log(months);
+   contentMonth = document.querySelector(".content2");
+   contentMonth.innerHTML = contentMonth.innerHTML.replace(/--/g, `${months}`);
    
 })
 
 const inputYear = document.getElementById("year");
 let year = "";
 let years ="";
+let contentYear;
 inputYear.addEventListener("input", (e)=>{
 year = e.target.value;
 years = annee - year;
-
+console.log(years);
+contentYear =document.querySelector(".content1");
+contentYear.innerHTML = contentYear.innerHTML.replace(/--/g, `${years}`);
+   
 })
+
 
 const display = document.querySelector('input[type="image"]');
 display.addEventListener("click", (e) => {
