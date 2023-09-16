@@ -1,0 +1,193 @@
+
+
+main{
+   
+    height:500px;
+    width:45%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px 30px 180px 30Px;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    display: grid;
+}
+body{
+   
+    background: rgb(244, 240, 240);
+
+ 
+}
+
+label{
+height:50px;
+color: rgb(86, 84, 84);
+}
+input[type="text"]{
+    height: 55px;
+    width:125px;
+    border-radius: 5px;
+    border: solid rgb(184, 179, 179) 2px;
+    margin-bottom: 500Px;
+    transition: 0.2s;
+    font-size:30px;
+    font-weight: bold;
+    
+}
+input[type="text"]:hover{
+    cursor: pointer;
+    border:solid purple 2px;
+}
+input[type="text"]:focus{
+    border: solid  purple 2px;
+    }
+
+input[type="text"]::placeholder {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+  }
+
+  
+
+.form{
+/* justify-content: space-around;
+flex-direction: row;
+justify-content:stretch; */
+display: grid;
+position:relative;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+ grid-template-areas: "label1 label2 label3" 
+                    "input1 input2 input3";
+}
+
+.form::after{
+    content: "";
+    position:absolute;
+    background:rgb(184, 179, 179);
+    height: 3px;
+    width: 85%;
+    bottom: -40px;
+    left:0%;
+    
+}
+.display{
+    position:relative;
+}
+
+
+#butn{
+
+height: 120px;
+width: 120px;
+border-radius: 250px 250px;
+background: purple;
+position: absolute;
+right: -10%;
+margin-right: 450px;
+justify-content: space-around;
+transition: 0.2s;
+   
+}
+
+#butn:hover{
+    cursor: pointer;
+   background: black;
+}
+#butn:active{
+    transform: scale(1.2,1.2);
+}
+
+p{
+
+    /* margin-top: 100px; */
+    /* justify-content: flex-start; */
+    font-size:5.5rem;
+    font-weight: bolder;
+    margin: 1px;
+    margin-top: -10px;
+   
+    }
+span p {
+        display: inline;
+        margin-right: 10px; /* Ajoute un espace entre les paragraphes si nécessaire */
+        color:purple;
+      }
+
+.content1, .content2, .content3{
+font-weight: bold;
+font-size: 6rem;
+}
+
+strong p {
+  color: black;
+
+}
+
+
+/* strong p:before {
+  content: "--";
+  color: purple;
+
+} */
+
+
+    @media screen and (max-width: 1100px)
+
+    {
+        main{
+            display: grid;
+            font-size: 15px;
+            flex-direction: column;
+        }
+       
+        }
+        p{
+            font-size:40px;
+            
+        }
+        #butn{
+            height: 80px;
+            width: 80px;
+            position: relative;
+            right:-75%;
+                    
+        }
+    
+
+        @media screen and (max-width: 550px)
+        {
+        #butn{
+           right:-15%;
+        
+        }
+    
+
+    input[type="text"]{
+        height: 35px;
+        width:65px;
+        border-radius: 5px;
+        border: solid rgb(184, 179, 179) 2px;
+        margin-bottom: 500Px;
+        font-size:large;
+        /* text-decoration:black ;
+        font-weight: bold; */
+    }
+    input[type="text"]:focus{
+        text-decoration:black ;
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .form::after{
+        content: "";
+        position:absolute;
+        background:rgb(184, 179, 179);
+        height: 2px;
+        width: 45%;
+        bottom: -40px;
+        left:0%;
+        
+    }
+        }
