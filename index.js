@@ -10,9 +10,9 @@ inputDay.addEventListener("input", (e)=>{
     days = (jour - day);
     console.log(days);
    contentDay = document.querySelector(".content3");
-   contentDay.innerHTML = contentDay.innerHTML.replace(/--/g, `${days}`);
+   contentDay.innerHTML = days;
+   // contentDay.innerHTML = contentDay.innerHTML.replace(/--/g, `${days}`);
 })
-
 const inputMonth = document.getElementById("month");
 let month = "";
 let months ="";
@@ -22,7 +22,8 @@ inputMonth.addEventListener("input", (e) =>{
    months = mois - month;
    console.log(months);
    contentMonth = document.querySelector(".content2");
-   contentMonth.innerHTML = contentMonth.innerHTML.replace(/--/g, `${months}`);
+   contentMonth.innerHTML = months; 
+   // contentMonth.innerHTML = contentMonth.innerHTML.replace(/--/g, `${months}`);
    
 })
 
@@ -35,7 +36,8 @@ year = e.target.value;
 years = annee - year;
 console.log(years);
 contentYear =document.querySelector(".content1");
-contentYear.innerHTML = contentYear.innerHTML.replace(/--/g, `${years}`);
+contentYear.innerHTML= years ;
+// contentYear.innerHTML = contentYear.innerHTML.replace(/--/g, `${years}`);
    
 })
 
